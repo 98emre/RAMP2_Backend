@@ -1,0 +1,542 @@
+package com.rampiibackend.rampiibackend.assessment.DTO.RiskAreas;
+
+import com.fasterxml.jackson.annotation.JsonIdentityInfo;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.ObjectIdGenerators;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.validation.constraints.Size;
+
+@NoArgsConstructor
+@JsonIdentityInfo(scope = com.rampiibackend.rampiibackend.assessment.Entity.RiskAreas.InfluencingFactors.class,generator= ObjectIdGenerators.PropertyGenerator.class, property="id")
+@Data
+public class InfluencingFactors {
+
+    @JsonIgnore
+    private final int SIZE =  65;
+
+    @JsonIgnore
+    private final int LENGTH = 5;
+
+    private Long id;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q51a;
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q51a_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q51b;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q51b_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q51c;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q51c_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q51d;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q51d_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q51e;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q51e_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q51f;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q51f_Comm;
+
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52a;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52a_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52b;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52b_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52c;
+
+    @Size(max = 65, message = "Comment Lenght Is Max 65")
+    private String q52c_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52d;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52d_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52e;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52e_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52f;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52f_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52g;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52g_Comm;
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q52h;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q52h_Comm;
+
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q53a;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q53a_Comm;
+
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q53b;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q53b_Comm;
+
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q53c;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q53c_Comm;
+
+
+    @Size(max = LENGTH, message = "It's Max Size")
+    private String q53d;
+
+    @Size(max = SIZE, message = "Comment Lenght Is Max 65")
+    private String q53d_Comm;
+
+    @JsonIgnore
+    private CheckList checkList;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public InfluencingFactors(String q51a, String q51a_Comm,
+                              String q51b, String q51b_Comm,
+                              String q51c, String q51c_Comm,
+                              String q51d, String q51d_Comm,
+                              String q51e, String q51e_Comm,
+                              String q51f, String q51f_Comm,
+                              String q52a, String q52a_Comm,
+                              String q52b, String q52b_Comm,
+                              String q52c, String q52c_Comm,
+                              String q52d, String q52d_Comm,
+                              String q52e, String q52e_Comm,
+                              String q52f, String q52f_Comm,
+                              String q52g, String q52g_Comm,
+                              String q52h, String q52h_Comm,
+                              String q53a, String q53a_Comm,
+                              String q53b, String q53b_Comm,
+                              String q53c, String q53c_Comm,
+                              String q53d, String q53d_Comm) {
+        this.q51a = q51a;
+        this.q51a_Comm = q51a_Comm;
+        this.q51b = q51b;
+        this.q51b_Comm = q51b_Comm;
+        this.q51c = q51c;
+        this.q51c_Comm = q51c_Comm;
+        this.q51d = q51d;
+        this.q51d_Comm = q51d_Comm;
+        this.q51e = q51e;
+        this.q51e_Comm = q51e_Comm;
+        this.q51f = q51f;
+        this.q51f_Comm = q51f_Comm;
+        this.q52a = q52a;
+        this.q52a_Comm = q52a_Comm;
+        this.q52b = q52b;
+        this.q52b_Comm = q52b_Comm;
+        this.q52c = q52c;
+        this.q52c_Comm = q52c_Comm;
+        this.q52d = q52d;
+        this.q52d_Comm = q52d_Comm;
+        this.q52e = q52e;
+        this.q52e_Comm = q52e_Comm;
+        this.q52f = q52f;
+        this.q52f_Comm = q52f_Comm;
+        this.q52g = q52g;
+        this.q52g_Comm = q52g_Comm;
+        this.q52h = q52h;
+        this.q52h_Comm = q52h_Comm;
+        this.q53a = q53a;
+        this.q53a_Comm = q53a_Comm;
+        this.q53b = q53b;
+        this.q53b_Comm = q53b_Comm;
+        this.q53c = q53c;
+        this.q53c_Comm = q53c_Comm;
+        this.q53d = q53d;
+        this.q53d_Comm = q53d_Comm;
+    }
+
+    public String getQ51a() {
+        return q51a;
+    }
+
+    public void setQ51a(String q51a) {
+        this.q51a = q51a;
+    }
+
+    public String getQ51a_Comm() {
+        return q51a_Comm;
+    }
+
+    public void setQ51a_Comm(String q51a_Comm) {
+        this.q51a_Comm = q51a_Comm;
+    }
+
+    public String getQ51b() {
+        return q51b;
+    }
+
+    public void setQ51b(String q51b) {
+        this.q51b = q51b;
+    }
+
+    public String getQ51b_Comm() {
+        return q51b_Comm;
+    }
+
+    public void setQ51b_Comm(String q51b_Comm) {
+        this.q51b_Comm = q51b_Comm;
+    }
+
+    public String getQ51c() {
+        return q51c;
+    }
+
+    public void setQ51c(String q51c) {
+        this.q51c = q51c;
+    }
+
+    public String getQ51c_Comm() {
+        return q51c_Comm;
+    }
+
+    public void setQ51c_Comm(String q51c_Comm) {
+        this.q51c_Comm = q51c_Comm;
+    }
+
+    public String getQ51d() {
+        return q51d;
+    }
+
+    public void setQ51d(String q51d) {
+        this.q51d = q51d;
+    }
+
+    public String getQ51d_Comm() {
+        return q51d_Comm;
+    }
+
+    public void setQ51d_Comm(String q51d_Comm) {
+        this.q51d_Comm = q51d_Comm;
+    }
+
+    public String getQ51e() {
+        return q51e;
+    }
+
+    public void setQ51e(String q51e) {
+        this.q51e = q51e;
+    }
+
+    public String getQ51e_Comm() {
+        return q51e_Comm;
+    }
+
+    public void setQ51e_Comm(String q51e_Comm) {
+        this.q51e_Comm = q51e_Comm;
+    }
+
+    public String getQ51f() {
+        return q51f;
+    }
+
+    public void setQ51f(String q51f) {
+        this.q51f = q51f;
+    }
+
+    public String getQ51f_Comm() {
+        return q51f_Comm;
+    }
+
+    public void setQ51f_Comm(String q51f_Comm) {
+        this.q51f_Comm = q51f_Comm;
+    }
+
+    public String getQ52a() {
+        return q52a;
+    }
+
+    public void setQ52a(String q52a) {
+        this.q52a = q52a;
+    }
+
+    public String getQ52a_Comm() {
+        return q52a_Comm;
+    }
+
+    public void setQ52a_Comm(String q52a_Comm) {
+        this.q52a_Comm = q52a_Comm;
+    }
+
+    public String getQ52b() {
+        return q52b;
+    }
+
+    public void setQ52b(String q52b) {
+        this.q52b = q52b;
+    }
+
+    public String getQ52b_Comm() {
+        return q52b_Comm;
+    }
+
+    public void setQ52b_Comm(String q52b_Comm) {
+        this.q52b_Comm = q52b_Comm;
+    }
+
+    public String getQ52c() {
+        return q52c;
+    }
+
+    public void setQ52c(String q52c) {
+        this.q52c = q52c;
+    }
+
+    public String getQ52c_Comm() {
+        return q52c_Comm;
+    }
+
+    public void setQ52c_Comm(String q52c_Comm) {
+        this.q52c_Comm = q52c_Comm;
+    }
+
+    public String getQ52d() {
+        return q52d;
+    }
+
+    public void setQ52d(String q52d) {
+        this.q52d = q52d;
+    }
+
+    public String getQ52d_Comm() {
+        return q52d_Comm;
+    }
+
+    public void setQ52d_Comm(String q52d_Comm) {
+        this.q52d_Comm = q52d_Comm;
+    }
+
+    public String getQ52e() {
+        return q52e;
+    }
+
+    public void setQ52e(String q52e) {
+        this.q52e = q52e;
+    }
+
+    public String getQ52e_Comm() {
+        return q52e_Comm;
+    }
+
+    public void setQ52e_Comm(String q52e_Comm) {
+        this.q52e_Comm = q52e_Comm;
+    }
+
+    public String getQ52f() {
+        return q52f;
+    }
+
+    public void setQ52f(String q52f) {
+        this.q52f = q52f;
+    }
+
+    public String getQ52f_Comm() {
+        return q52f_Comm;
+    }
+
+    public void setQ52f_Comm(String q52f_Comm) {
+        this.q52f_Comm = q52f_Comm;
+    }
+
+    public String getQ52g() {
+        return q52g;
+    }
+
+    public void setQ52g(String q52g) {
+        this.q52g = q52g;
+    }
+
+    public String getQ52g_Comm() {
+        return q52g_Comm;
+    }
+
+    public void setQ52g_Comm(String q52g_Comm) {
+        this.q52g_Comm = q52g_Comm;
+    }
+
+    public String getQ52h() {
+        return q52h;
+    }
+
+    public void setQ52h(String q52h) {
+        this.q52h = q52h;
+    }
+
+    public String getQ52h_Comm() {
+        return q52h_Comm;
+    }
+
+    public void setQ52h_Comm(String q52h_Comm) {
+        this.q52h_Comm = q52h_Comm;
+    }
+
+    public String getQ53a() {
+        return q53a;
+    }
+
+    public void setQ53a(String q53a) {
+        this.q53a = q53a;
+    }
+
+    public String getQ53a_Comm() {
+        return q53a_Comm;
+    }
+
+    public void setQ53a_Comm(String q53a_Comm) {
+        this.q53a_Comm = q53a_Comm;
+    }
+
+    public String getQ53b() {
+        return q53b;
+    }
+
+    public void setQ53b(String q53b) {
+        this.q53b = q53b;
+    }
+
+    public String getQ53b_Comm() {
+        return q53b_Comm;
+    }
+
+    public void setQ53b_Comm(String q53b_Comm) {
+        this.q53b_Comm = q53b_Comm;
+    }
+
+    public String getQ53c() {
+        return q53c;
+    }
+
+    public void setQ53c(String q53c) {
+        this.q53c = q53c;
+    }
+
+    public String getQ53c_Comm() {
+        return q53c_Comm;
+    }
+
+    public void setQ53c_Comm(String q53c_Comm) {
+        this.q53c_Comm = q53c_Comm;
+    }
+
+    public String getQ53d() {
+        return q53d;
+    }
+
+    public void setQ53d(String q53d) {
+        this.q53d = q53d;
+    }
+
+    public String getQ53d_Comm() {
+        return q53d_Comm;
+    }
+
+    public void setQ53d_Comm(String q53d_Comm) {
+        this.q53d_Comm = q53d_Comm;
+    }
+
+    public CheckList getCheckList() {
+        return checkList;
+    }
+
+    public void setCheckList(CheckList checkList) {
+        this.checkList = checkList;
+    }
+
+    @Override
+    public String toString() {
+        return "InfluencingFactors{" +
+                ", id=" + id +
+                ", q51a=" + q51a +
+                ", q51a_Comm='" + q51a_Comm + '\'' +
+                ", q51b=" + q51b +
+                ", q51b_Comm='" + q51b_Comm + '\'' +
+                ", q51c=" + q51c +
+                ", q51c_Comm='" + q51c_Comm + '\'' +
+                ", q51d=" + q51d +
+                ", q51d_Comm='" + q51d_Comm + '\'' +
+                ", q51e=" + q51e +
+                ", q51e_Comm='" + q51e_Comm + '\'' +
+                ", q51f=" + q51f +
+                ", q51f_Comm='" + q51f_Comm + '\'' +
+                ", q52a=" + q52a +
+                ", q52a_Comm='" + q52a_Comm + '\'' +
+                ", q52b=" + q52b +
+                ", q52b_Comm='" + q52b_Comm + '\'' +
+                ", q52c=" + q52c +
+                ", q52c_Comm='" + q52c_Comm + '\'' +
+                ", q52d=" + q52d +
+                ", q52d_Comm='" + q52d_Comm + '\'' +
+                ", q52e=" + q52e +
+                ", q52e_Comm='" + q52e_Comm + '\'' +
+                ", q52f=" + q52f +
+                ", q52f_Comm='" + q52f_Comm + '\'' +
+                ", q52g=" + q52g +
+                ", q52g_Comm='" + q52g_Comm + '\'' +
+                ", q52h=" + q52h +
+                ", q52h_Comm='" + q52h_Comm + '\'' +
+                ", q53a=" + q53a +
+                ", q53a_Comm='" + q53a_Comm + '\'' +
+                ", q53b=" + q53b +
+                ", q53b_Comm='" + q53b_Comm + '\'' +
+                ", q53c=" + q53c +
+                ", q53c_Comm='" + q53c_Comm + '\'' +
+                ", q53d=" + q53d +
+                ", q53d_Comm='" + q53d_Comm + '\'' +
+                ", checkList=" + checkList +
+                '}';
+    }
+}
