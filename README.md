@@ -4,6 +4,8 @@ which is an assessment tool designed for a detailed analysis and evaluation of e
 These tasks can increase the risk of musculoskeletal disorders. Manual material handling includes activities such as lifting, pushing, or pulling objects manually.
 Prolonged or frequent exposure to these risk factors can increase the likelihood of developing or exacerbating musculoskeletal disorders.
 
+This page is about our backend where the application runs inSpring boot REST API.
+
 ## Java Installation Guide
 We used the programming language Java
 
