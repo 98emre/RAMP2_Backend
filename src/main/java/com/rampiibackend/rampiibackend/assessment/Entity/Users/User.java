@@ -13,7 +13,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "user")
+@Table(name = "\"user\"")
 @JsonIdentityInfo(scope = User.class,generator= ObjectIdGenerators.IntSequenceGenerator.class, property="@id")
 public class User implements UserDetails {
 
